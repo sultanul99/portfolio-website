@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Sultanul Khan - Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7a7292a06a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header"> 
+
+        <div class="container">
+            <nav>
+                <img src="/logo.png" class="logo" >
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I am <br> Md Sultanul Arefin Khan</h1>
+                <p><span> A Software Engineer & Tech Enthusiast</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!----------about section---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about.jpg" width="300" height="500" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        As a results-driven Software Engineer with a strong 
+                        foundation in computer science, I thrive on building 
+                        scalable, high-impact solutions across cloud, microservices,
+                         and telematics platforms. With a Magna Cum Laude distinction
+                          from Georgia State University and a proven track record in
+                           optimizing Apache Spark jobs, deploying Spring Batch
+                            applications, and architecting full-stack systems using 
+                            Java, React, Flask, and AWS, I bring both technical 
+                            expertise and a passion for innovation. Whether it’s 
+                            integrating complex systems or developing intelligent 
+                            recommendation engines, I’m driven by solving complex 
+                            problems and delivering value through clean, efficient 
+                            code.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full Stack Development</span><br>Frontend & Backend Development</li>
+                            <li><span>Programming Languages</span><br>Python, Java, C++, JavaScript, SQL, HTML, CSS, TypeScript, Ruby, Go</li>
+                            <li><span>Technologies/Tools</span><br>Git, Access, Ruby on Rails, GraphQL, MySQL, Redis, React.js, Express.js, VMWare, Jira, Docker,
+                                Kubernetes, Spring, Spring Boot, Hibernate ORM, RESTful API Development, Microservices, AngularJS, Jenkins</li>
+                            <li><span>Cloud Technologies</span><br>AWS (DynamoDB, API Gateway, SQS, EC2, S3, Lambda), Azure (AKS, DevOps), GCP (BigQuery)</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Aug 2022 - Present</span><br>General Motors - Software Engineer</li>
+            
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Aug 2018 – May 2022</span><br>Georgia State University <br>Bachelor of Computer Science, GPA: 3.82/4.00 <br> Magna Cum Laude, Dean’s List (multiple Semesters) </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!----------services section---------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Full-Stack Application Development</h2>
+                    <p>Build interactive, responsive, and user-friendly web applications. <br>
+                        Using React.js, Node.js, and PostgreSQL, I develop modern full-stack applications tailored to your needs. Whether it’s a secure expense tracker or a real-time movie recommendation system, I bring an eye for detail and a focus on delivering scalable, production-grade solutions.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code-fork"></i>
+                    <h2>Custom Backend Development</h2>
+                    <p>Deliver scalable and efficient backend solutions for complex applications. <br>
+                        Leverage expertise in Python, Java, and Spring Boot to design and deploy robust microservices and RESTful APIs. With a proven record of improving system performance and reliability, I can help modernize legacy systems and implement cloud-integrated solutions to power your business operations.</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Cloud Integration & DevOps Consulting</h2>
+                    <p>Streamline your cloud operations with tailored AWS, Azure, and GCP solutions. <br>
+                        From deploying microservices in Kubernetes to automating workflows using Jenkins, I provide end-to-end cloud integration services. My experience with secure OAuth2/JWT authentication and performance optimization ensures seamless and reliable cloud-native applications.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!----------contact section---------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>sultan.arefin99@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+1 (470) 915 2350</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sultanulkhan"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="/resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Md Sultanul Arefin Khan. All rights reserved.</p>
+        </div>
+    </div>
+
+  
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+  
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxdQDRkQSrA6zyPXRz_9fMVASwgenB21caNAh2XIx7nCUEtqYEr3m9oY5xyp_qkHxXD/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Form Submitted Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    
+</body>
+</html>
